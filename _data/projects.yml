@@ -1,0 +1,5 @@
+- name: Connectors
+  github: ToucanToco/connectors
+
+- name: Doc
+  github: ToucanToco/doc
