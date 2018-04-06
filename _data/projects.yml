@@ -12,6 +12,10 @@
       github: ToucanToco/doc
       description: Toucan Toco documentation
 
+    - name: Gandi DNS Manager
+      github:
+      description: Tiny gandi.cli bash wrapper to manage Gandi DNS zone files
+
 - data:
   projects:
     - name: Toucan Connectors
