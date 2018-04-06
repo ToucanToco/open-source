@@ -1,5 +1,23 @@
-- name: Connectors
-  github: ToucanToco/connectors
+- name: Releaseman
+  github: ToucanToco/releaseman
+  description: Git flow + GitHub PRs = <3
+
+- name: Dev Manifesto
+  github: ToucanToco/dev-manifesto
+  description: L'équipe tech tokarde apprécie et valorise les points suivants chez les (futurs-) tokars
+
+- name: Toucan Connectors
+  github: ToucanToco/toucan-connectors
+  description: Connect Toucan Toco backed to any data store
+
+- name: Toucan Data SDK
+  github: ToucanToco/toucan-data-sdk
+  description: Develop and run your Toucan data pipeline anywhere
+
+- name: Toucan API Client
+  github: ToucanToco/toucan-client
+  description: A Python API client for Toucan Toco
 
 - name: Doc
   github: ToucanToco/doc
+  description: Toucan Toco documentation
