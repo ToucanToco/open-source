@@ -8,7 +8,7 @@ twitter_username: "Toucan_Toco"
 github_username: ToucanToco
 # logo: /img/toucantoco_logo.png
 
-gems:
+plugins:
   - jekyll-autoprefixer
 
 exclude:
