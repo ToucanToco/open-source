@@ -1,11 +1,35 @@
-<h1>Toucan Toco open source</h1>
-
-<ul>
-    {% for project in site.data.projects %}
-    <li>
-        <a href="https://github.com/{{ project.github }}">
-            {{ project.name }}
-        </a>
-    </li>
-    {% endfor %}
-</ul>
+---
+---
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" type="text/css" />
+    </head>
+    <body>
+        <div class="title">
+            <a href="./" class="icon icon-book"> {{ site.title }}</a>
+        </div>
+        <div class="repos">
+            {% for section in site.data.projects %}
+            <div class="repos-section repos-section--{{ section.name }}">
+                <div class="repos-section__wrapper">
+                    <div class="repos-section__header">
+                        <h3 class="repos-section__subhead"></h3>
+                        <h2 class="repos-section__title">{{ section.name }}</h2>
+                    </div>
+                    <div class="repos-section__content">
+                        {% for project in section.projects %}
+                        <a href="https://github.com/{{ project.github }}">
+                            <div class="repos-section__project">
+                                <h3 class="repos-section__project__title">{{ project.name }}</h3>
+                                <p class="repos-section__project__subtitle">{{ project.description }}</p>
+                                <img class="repos-section__project__icon icon--feel-the-power" src="../../_static/img/feel-the-power.png">
+                            </div>
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    </body>
+</html>

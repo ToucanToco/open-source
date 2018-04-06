@@ -1,4 +1,4 @@
-- general:
+- name: general
   projects:
     - name: Releaseman
       github: ToucanToco/releaseman
@@ -16,7 +16,7 @@
       github: ToucanToco/gandi-dnsManager
       description: Tiny gandi.cli bash wrapper to manage Gandi DNS zone files
 
-- data:
+- name: data
   projects:
     - name: Toucan Connectors
       github: ToucanToco/toucan-connectors
@@ -30,7 +30,7 @@
       github: ToucanToco/toucan-client
       description: A Python API client for Toucan Toco
 
-- small app design:
+- name: tools
   projects:
     - name: Local Toucan
       github: ToucanToco/tc-tools

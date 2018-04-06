@@ -1,0 +1,326 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,700|Roboto+Slab:300,700');
+
+// @import './_variables';
+$card-width: 350px;
+$card-height: 135px;
+$text-color: #404040;
+$grey: #aaaaaa;
+$light-grey: #F5F5F5;
+$white: #fff;
+$green: #A0D1C5;
+$dark-green: #5EA490;
+$yellow: #F1BE02;
+$dark-yellow: #B18B00;
+$blue: #548696;
+$dark-blue: #12586A;
+$silver: #DDDDDD;
+$orange: #E78352;
+
+body {
+  margin: 0;
+}
+
+.title {
+  align-items: center;
+  background-color: $text-color;
+  display: flex;
+  height: 94px;
+  padding: 0 40px;
+  font-family: "Montserrat";
+  font-weight: 700;
+
+  @media screen and (max-width: 768px) {
+    align-items: center;
+    flex-direction: column;
+    height: 115px;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  a {
+    color: $white;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-right: 5%;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+  }
+
+  .icon-book::before {
+    font-size: 30px;
+    margin-right: 15px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 25px;
+      margin-right: 8px;
+    }
+  }
+}
+
+.repos-section {
+  padding: 70px 0;
+}
+
+.repos-section:nth-child(1) {
+  background-color: $green;
+
+  .repos-section__subhead {
+    color: $dark-green;
+  }
+}
+
+.repos-section:nth-child(2) {
+  background-color: $yellow;
+
+  .repos-section__subhead {
+    color: $dark-yellow;
+  }
+}
+
+.repos-section:nth-child(3) {
+  background-color: $blue;
+
+  .repos-section__subhead {
+    color: $dark-blue;
+  }
+}
+
+.repos-section__wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.repos-section__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.repos-section__content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: ($card-width + 40px) * 3;
+
+  @media screen and (max-width: 1170px) {
+    width: ($card-width + 40px) * 2;
+  }
+
+  @media screen and (max-width: 780px) {
+    width: $card-width + 40px;
+  }
+
+  @media screen and (max-width: 780px) {
+    width: auto;
+    flex-direction: column;
+  }
+}
+
+.repos-section__content a {
+  color: $text-color;
+  margin: 20px;
+  text-decoration: none;  
+
+  &:hover {
+    color: $text-color;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 20px 0;
+  }
+}
+
+.repos-section__subhead {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.repos-section__title {
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 4.5px;
+  margin: 0;
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.repos-section__project {
+  font-family:"Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;  
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.25);
+  background-color: $white;
+  height: $card-height;
+  width: $card-width;
+  box-sizing: border-box;
+  padding: 20px 10px 10px 75px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.5s;
+
+  &:hover {
+    background-color: $light-grey;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 300px;
+  }
+}
+
+.repos-section__project__icon {
+  bottom: -10px;
+  left: -21px;
+  position: absolute;
+}
+
+.repos-section__project__title {
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  margin-bottom: 5px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.repos-section__project__subtitle {
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 300;
+  margin: 0;
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.repos-section--news {
+  background-color: $light-grey;
+  display: flex;
+}
+
+.repos-section__news-card {
+  margin: auto;
+  width: 340px;
+
+  @media screen and (max-width: 768px) {
+    width: 300px;
+  }
+}
+
+.repos-section__news-card__title {
+  font-size: 30px;
+  font-family: "Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;
+  color: $text-color;
+  font-weight: bold;
+  line-height: 0.933;
+  text-align: left;
+  z-index: 11;
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.repos-section__news-card__content {
+  align-items: center;
+  background-color: $green;
+  display: flex;
+  flex-direction: column;
+  height: 375px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+
+  a {
+    z-index: 2;
+  }
+}
+
+.repos-section__news-card__content-title {
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: $white;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 33px;
+  margin-bottom: 0;
+  text-align: center;
+  z-index: 2;
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  span {
+    font-size: 30px;
+    letter-spacing: 5px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 26px;
+    }
+  }
+}
+
+.repos-section__news-card__content-button {
+  background-color: $white;
+  border-radius: 10px;
+  color: $green;
+  font-family: "Montserrat";
+  font-size: 15px;
+  letter-spacing: 3px;
+  line-height: 1.2;
+  margin: 20px 0;
+  padding: 25px 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 280px;
+  z-index: 2;
+
+  @media screen and (max-width: 768px) {
+    font-size: 13px;
+    letter-spacing: 2px;
+    width: 245px;
+  }
+}
+
+.repos-section__news-card__content-p {
+  font-size: 12.5px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  line-height: 1.6;
+  text-align: center;
+  z-index: 2;
+}
+
+.repos-section__news-card__icon {
+  position: absolute;
+  bottom: -40px;
+  right: -75px;
+}
