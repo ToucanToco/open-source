@@ -1,0 +1,18 @@
+# Site settings
+title: Toucan Toco
+email: dev+open-sourcet@toucantoco.com
+description: "Open-source projects created by by Toucan Toco"
+baseurl: ""
+url: "https://open-source.toucantoco.com"
+twitter_username: "Toucan_Toco"
+github_username: ToucanToco
+# logo: /img/toucantoco_logo.png
+
+gems:
+  - jekyll-autoprefixer
+
+exclude:
+  - vendor
+  - README.md
+  - CONTRIBUTING.md
+  - Dockerfile
