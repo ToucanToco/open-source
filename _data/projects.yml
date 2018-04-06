@@ -13,7 +13,7 @@
       description: Toucan Toco documentation
 
     - name: Gandi DNS Manager
-      github:
+      github: ToucanToco/gandi-dnsManager
       description: Tiny gandi.cli bash wrapper to manage Gandi DNS zone files
 
 - data:
