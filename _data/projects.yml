@@ -8,10 +8,6 @@
       github: ToucanToco/dev-manifesto
       description: L'équipe tech tokarde apprécie et valorise les points suivants chez les (futurs-) tokars
 
-    - name: Doc
-      github: ToucanToco/doc
-      description: Toucan Toco documentation
-
     - name: Gandi DNS Manager
       github: ToucanToco/gandi-dnsManager
       description: Tiny gandi.cli bash wrapper to manage Gandi DNS zone files
