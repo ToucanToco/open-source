@@ -167,13 +167,13 @@ body {
 }
 
 .repos-section__project {
-  font-family:"Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;  
+  font-family:"Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;
   box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.25);
   background-color: $white;
   height: $card-height;
   width: $card-width;
   box-sizing: border-box;
-  padding: 20px 10px 10px 75px;
+  padding: 20px 10px 10px 40px;
   position: relative;
   overflow: hidden;
   display: flex;
