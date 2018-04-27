@@ -11,6 +11,10 @@
     - name: Gandi DNS Manager
       github: ToucanToco/gandi-dnsManager
       description: Tiny gandi.cli bash wrapper to manage Gandi DNS zone files
+      
+    - name: Spaklines d3 plugin
+      github: ToucanToco/sparklines
+      description: A d3 plugins for tiny & coherent trend graphs
 
 - name: data
   projects:
