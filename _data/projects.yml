@@ -29,6 +29,6 @@
 - name: tools
   projects:
     - name: Local Toucan
-      github: ToucanToco/tc-tools
+      github: ToucanToco/tctools
       description: Develop and run your Toucan Toco front_config locally
 
