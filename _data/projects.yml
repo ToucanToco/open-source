@@ -1,5 +1,13 @@
 - name: general
   projects:
+    - name: Weaverbird
+      github: ToucanToco/weaverbird
+      description: A visual query builder for MongoDB, extendable to various backends
+
+    - name: Components
+      github: ToucanToco/components
+      description: A growing set of Vue.js components with a nice Toucan touch
+
     - name: Releaseman
       github: ToucanToco/releaseman
       description: Git flow + GitHub PRs = <3
@@ -20,7 +28,11 @@
   projects:
     - name: Toucan Connectors
       github: ToucanToco/toucan-connectors
-      description: Connect Toucan Toco backed to any data store
+      description: Connect Toucan Toco backend to any data store
+      
+    - name: Pae Kina
+      github: ToucanToco/peakina
+      description: Wrapper around pandas, extending its capacities for datat files extraction
 
     - name: Toucan Data SDK
       github: ToucanToco/toucan-data-sdk
@@ -30,7 +42,7 @@
       github: ToucanToco/toucan-client
       description: A Python API client for Toucan Toco
 
-- name: tools
+- name: others
   projects:
     - name: Local Toucan
       github: ToucanToco/tctools
